@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Practice Suite">
+    <test name="Test Basics 1">
+    <parameter name="name" value="Yogi Reddy Nusum"/>
+        <parameter name="mobileNum" value="8374033532"/>
+        <parameter name="email" value="reddyyogi8010@gmail.com"/>
+        <parameter name="password" value="Yogi@1234"/>
+        <parameter name="confPassword" value="Yogi@1234"/>
+        <classes>
+            <class name="InitialPage.LoginPage">
+                <methods>
+                    <include name="HomePage.enablePermission"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
